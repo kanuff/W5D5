@@ -1,0 +1,49 @@
+/* PHASE 3: Layout */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  margin: 0 auto;
+  background: #fff;
+  width: 900px;
+  border: 1px solid #ccc;
+  border-top: 0;
+}
+
+.content-header{
+   height: 200px;
+   /* display: block; */
+   /* background-size: cover; */
+   /* position: relative; */
+   z-index: 1;
+}
+
+.group::after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.content-seperate {
+  display: flex;
+  z-index: 2;
+}
+
+.content-image {
+
+}
+
+.content-sidebar {
+  width: 200px;
+  min-height: 200px;
+  padding: 20px;
+  padding-right: 19px;
+  border-right: 1px solid #ccc;
+}
+
+.content-main {
+  width: 620px;
+  min-height: 200px;
+  padding: 20px;
+}
